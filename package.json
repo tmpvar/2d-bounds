@@ -1,0 +1,30 @@
+{
+  "name": "2d-bounds",
+  "version": "0.0.0",
+  "description": "barebones array based 2d bounds compute",
+  "main": "2d-bounds.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tmpvar/2d-bounds.git"
+  },
+  "keywords": [
+    "2d",
+    "aabb",
+    "bounds",
+    "arrays",
+    "polyline",
+    "points"
+  ],
+  "author": "Elijah Insua <tmpvar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tmpvar/2d-bounds/issues"
+  },
+  "homepage": "https://github.com/tmpvar/2d-bounds",
+  "devDependencies": {
+    "tape": "^4.0.0"
+  }
+}

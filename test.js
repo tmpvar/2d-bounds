@@ -1,4 +1,5 @@
 var test = require('tape');
+var bounds2 = require('./2d-bounds');
 
 test('triangle', function(t) {
 
@@ -8,7 +9,7 @@ test('triangle', function(t) {
     [10, 200]
   ]);
 
-  t.deepEqual(out, [ -100, 0, 10, 200 ]);
+  t.deepEqual(b, [ -100, 0, 10, 200 ]);
 
   t.end();
 });
@@ -20,9 +21,9 @@ test('reuse array', function(t) {
     [-100, 100],
     [0, 0],
     [10, 200]
-  ]);
+  ], out);
 
-  t.deepEqual(out, [ -100, 0, 10, 200 ]);
+  t.deepEqual(b, [ -100, 0, 10, 200 ]);
   t.equal(b, out);
   t.end();
 });
